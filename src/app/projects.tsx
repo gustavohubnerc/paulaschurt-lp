@@ -1,6 +1,4 @@
 "use client";
-
-import { ProjectCard } from "@/components";
 import { Typography } from "@material-tailwind/react";
 
 const PROJECTS = [
@@ -62,9 +60,6 @@ export function Projects() {
         </h3>
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-4">
-        {PROJECTS.map((props, idx) => (
-          <ProjectCard key={idx} {...props} />
-        ))}
       </div>
     </section>
   );
