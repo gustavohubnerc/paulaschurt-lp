@@ -14,6 +14,7 @@ import {
   XMarkIcon,
   Bars3Icon,
 } from "@heroicons/react/24/solid";
+import Image from "next/image";
 
 const NAV_MENU = [
   {
@@ -68,24 +69,30 @@ export function Navbar() {
   return (
     <MTNavbar shadow={false} fullWidth className="border-0 sticky top-0 z-50">
       <div className="container mx-auto flex items-center justify-between">
-        <Typography color="blue-gray" className="text-lg font-bold">
-          Material Tailwind
-        </Typography>
-        <ul className="ml-10 hidden items-center gap-8 lg:flex">
+        {/* <Typography color="blue-gray" className="text-lg font-bold">
+          
+        </Typography> */}
+        <Image
+          width={40}
+          height={40}
+          alt="paulaschurt"
+          src="/logos/logo-paula.png"
+        />
+        {/* <ul className="ml-10 hidden items-center gap-8 lg:flex">
           {NAV_MENU.map(({ name, icon: Icon, href }) => (
             <NavItem key={name} href={href}>
               <Icon className="h-5 w-5" />
               {name}
             </NavItem>
           ))}
-        </ul>
-        <div className="hidden items-center gap-2 lg:flex">
+        </ul> */}
+        {/* <div className="hidden items-center gap-2 lg:flex">
           <Button variant="text">Sign In</Button>
           <a href="https://www.material-tailwind.com/blocks" target="_blank">
             <Button color="gray">blocks</Button>
           </a>
-        </div>
-        <IconButton
+        </div> */}
+        {/* <IconButton
           variant="text"
           color="gray"
           onClick={handleOpen}
@@ -96,9 +103,9 @@ export function Navbar() {
           ) : (
             <Bars3Icon strokeWidth={2} className="h-6 w-6" />
           )}
-        </IconButton>
+        </IconButton> */}
       </div>
-      <Collapse open={open}>
+      {/* <Collapse open={open}>
         <div className="container mx-auto mt-3 border-t border-gray-200 px-2 pt-4">
           <ul className="flex flex-col gap-4">
             {NAV_MENU.map(({ name, icon: Icon }) => (
@@ -115,7 +122,7 @@ export function Navbar() {
             </a>
           </div>
         </div>
-      </Collapse>
+      </Collapse> */}
     </MTNavbar>
   );
 }

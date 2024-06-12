@@ -18,10 +18,10 @@ export default function Portfolio() {
       <Hero />
       <Clients />
       <Skills />
-      <Projects />
-      <Resume />
+      {/* <Projects /> */}
+      {/* <Resume /> */}
       <Testimonial />
-      <PopularClients />
+      {/* <PopularClients /> */}
       <ContactForm />
       <Footer />
     </>

@@ -4,20 +4,23 @@ import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
 
 const CLIENTS = [
-  "coinbase",
-  "spotify",
-  "pinterest",
-  "google",
-  "amazon",
-  "netflix",
+  "beb.png",
+  "99.png",
+  "brk123.png",
+  "johnson.png",
+  "cengage.png",
+  "wipro-removebg-preview.png",
+  "dsop.png",
+  "paulo.png",
+  "posture.png"
 ];
 
 export function Clients() {
   return (
-    <section className="px-8 py-28">
+    <section className="px-8 py-28 bg-pink-200">
       <div className="container mx-auto text-center">
-        <Typography variant="h6" color="blue-gray" className="mb-8">
-          My awesome clients
+        <Typography variant="h2" color="white" className="mb-8">
+          Know How
         </Typography>
         <div className="flex flex-wrap items-center justify-center gap-6">
           {CLIENTS.map((logo, key) => (
@@ -27,7 +30,7 @@ export function Clients() {
               width={768}
               height={768}
               className="w-40"
-              src={`/logos/logo-${logo}.svg`}
+              src={`/logos/logo-${logo}`}
             />
           ))}
         </div>
