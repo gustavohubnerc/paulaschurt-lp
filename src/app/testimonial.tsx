@@ -10,36 +10,34 @@ export function Testimonial() {
   return (
     <section className="py-12 px-8 lg:py-24">
       <div className="container max-w-screen-lg mx-auto">
-        <Card color="transparent" shadow={false} className="py-8 lg:flex-row">
-          <CardBody className="w-full lg:gap-10 h-full lg:!flex justify-between ">
+        <div className="py-8 lg:flex-row">
+          <div className="w-full lg:gap-10 h-full lg:!flex justify-between ">
             <div className="w-full mb-10 lg:mb-0">
-              <Typography
-                variant="h3"
-                color="blue-gray"
-                className="mb-4 font-bold lg:max-w-xs"
+              <h3
+                className="mb-4 font-bold lg:max-w-xs text-blue-gray text-2xl"
               >
                 Palestras, cursos e muito mais
-              </Typography>
+              </h3>
               <div className="flex items-center gap-4">
-                <Avatar
-                  variant="rounded"
+                <Image
+                  width={48}
+                  height={48}
                   src="/image/avatar1.png"
                   alt="palestras"
-                  size="sm"
                   className={`cursor-pointer ${
                     active === 1 ? "opacity-100" : "opacity-50"
-                  }`}
+                  } rounded-lg`}
                   onClick={() => setActive(1)}
                 />
                 <div className="w-[1px] h-[36px] bg-blue-gray-100 "></div>
-                <Avatar
-                  variant="rounded"
+                <Image
+                  width={48}
+                  height={48}
                   src="/image/avatar2.png"
                   alt="palestra"
-                  size="sm"
                   className={`cursor-pointer ${
                     active === 2 ? "opacity-100" : "opacity-50"
-                  }`}
+                  } rounded-lg`}
                   onClick={() => setActive(2)}
                 />
                 <div className="w-[1px] h-[36px] bg-blue-gray-100" />
@@ -54,8 +52,8 @@ export function Testimonial() {
                 className="h-full rounded-lg w-full object-cover"
               />
             </div>
-          </CardBody>
-        </Card>
+          </div>
+        </div>
       </div>
     </section>
   );

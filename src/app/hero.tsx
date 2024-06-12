@@ -8,22 +8,20 @@ function Hero() {
     <header className="bg-white p-8">
       <div className="container mx-auto grid h-full gap-10 min-h-[60vh] w-full grid-cols-1 items-center lg:grid-cols-2">
         <div className="row-start-2 lg:row-auto">
-          <Typography
-            variant="h1"
+          <h1
             color="blue-gray"
             className="mb-4 lg:text-5xl !leading-tight text-3xl"
           >
             Paula Schurt
-          </Typography>
-          <Typography
-            variant="lead"
+          </h1>
+          <h3
             className="mb-4 !text-gray-500 md:pr-16 xl:pr-28"
           >
             Palestrante, Escritora, Psicóloga, especializada em Psicologia Econômica,
             com duas certificações em Personel & Professional Coaching, Business Coaching e Empresária.
             Atuou por anos com Educação Financeira e Terapia Financeira, e como as emoçôes e o nosso modelo mental
             interferem em nossa tomada de decisão em relação ao dinheiro e prosperidade.
-          </Typography>
+          </h3>
           {/* <div className="grid">
             <Typography
               variant="small"

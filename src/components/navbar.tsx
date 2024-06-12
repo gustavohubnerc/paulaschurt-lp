@@ -40,16 +40,14 @@ interface NavItemProps {
 function NavItem({ children, href }: NavItemProps) {
   return (
     <li>
-      <Typography
-        as="a"
+      <a
         href={href || "#"}
         target={href ? "_blank" : "_self"}
-        variant="paragraph"
         color="gray"
         className="flex items-center gap-2 font-medium text-gray-900"
       >
         {children}
-      </Typography>
+      </a>
     </li>
   );
 }
@@ -67,14 +65,14 @@ export function Navbar() {
   }, []);
 
   return (
-    <MTNavbar shadow={false} fullWidth className="border-0 sticky top-0 z-50">
+    <div className="border-0 sticky top-0 z-50 w-full mt-6 h-20 bg-white">
       <div className="container mx-auto flex items-center justify-between">
         {/* <Typography color="blue-gray" className="text-lg font-bold">
           
         </Typography> */}
         <Image
-          width={40}
-          height={40}
+          width={70}
+          height={70}
           alt="paulaschurt"
           src="/logos/logo-paula.png"
         />
@@ -123,7 +121,7 @@ export function Navbar() {
           </div>
         </div>
       </Collapse> */}
-    </MTNavbar>
+    </div>
   );
 }
 

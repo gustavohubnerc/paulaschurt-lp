@@ -19,9 +19,9 @@ export function Clients() {
   return (
     <section className="px-8 py-28 bg-pink-200">
       <div className="container mx-auto text-center">
-        <Typography variant="h2" color="white" className="mb-8">
+        <h2 className="mb-8 text-white font-bold text-3xl">
           Know How
-        </Typography>
+        </h2>
         <div className="flex flex-wrap items-center justify-center gap-6">
           {CLIENTS.map((logo, key) => (
             <Image

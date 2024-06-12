@@ -43,12 +43,11 @@ export function Skills() {
   return (
     <section className="px-8">
       <div className="container mx-auto mb-20 text-center">
-        <Typography variant="h1" color="blue-gray" className="m-8">
+        <h1 color="blue-gray" className="m-8 font-bold text-6xl">
           Sobre mim
-        </Typography>
-        <Typography
-          variant="lead"
-          className="mx-auto w-full !text-gray-500 lg:w-10/12"
+        </h1>
+        <h3
+          className="mx-auto w-full !text-gray-500 lg:w-10/12 text-xl"
         >
           Por 5 anos foi professora na Pós-Graduação em Educação Financeira pelo Instituto DSOP, na disciplina de psicologia econômica;
           além de ter atendido e ministrado diversos cursos com o mesmo tema para centenas de pessoas.<br/>
@@ -56,7 +55,7 @@ export function Skills() {
           Meditação Mindfulness, Programação Neurolinguística (PNL), Psicologia Positiva e Neurociência, tudo isso propiciou ter uma visão ampla em 
           relação às pessoas e suas dificuldades, trazendo soluções práticas e inovadoras a antigas questões.    
           
-        </Typography>
+        </h3>
       </div>
       <div className="container mx-auto grid">
         {SKILLS.map((props, idx) => (
