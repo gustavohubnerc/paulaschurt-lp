@@ -49,11 +49,11 @@ export function Skills() {
         <h3
           className="mx-auto w-full !text-gray-500 lg:w-10/12 text-xl"
         >
-          Por 5 anos foi professora na Pós-Graduação em Educação Financeira pelo Instituto DSOP, na disciplina de psicologia econômica;
-          além de ter atendido e ministrado diversos cursos com o mesmo tema para centenas de pessoas.<br/>
           Especializada também em Hipnose Clínica, Reprogramação Mental e Emocional, Regressão de Memória, Ressignificação de traumas, medos e fobias,
           Meditação Mindfulness, Programação Neurolinguística (PNL), Psicologia Positiva e Neurociência, tudo isso propiciou ter uma visão ampla em 
-          relação às pessoas e suas dificuldades, trazendo soluções práticas e inovadoras a antigas questões.    
+          relação às pessoas e suas dificuldades, trazendo soluções práticas e inovadoras a antigas questões.<br/>
+          Já atendeu e treinou mais de 5 mil pessoas e hoje seu trabalho é voltado as empresas, na capacitação de líderes, finanças comportamentais, comunicação, inteligência emocional e saúde mental.
+
           
         </h3>
       </div>

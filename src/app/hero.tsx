@@ -17,8 +17,7 @@ function Hero() {
           <h3
             className="mb-4 !text-gray-500 md:pr-16 xl:pr-28"
           >
-            Palestrante, Escritora, Psicóloga, especializada em Psicologia Econômica,
-            com duas certificações em Personel & Professional Coaching, Business Coaching e Empresária.
+            Palestrante internacional, treinadora e mentora. É psicóloga, especializada em psicologia econômica e prosperidade, com duas certificações em Personal & Professional Coaching, Business Coaching e Empresária.
             Atuou por anos com Educação Financeira e Terapia Financeira, e como as emoçôes e o nosso modelo mental
             interferem em nossa tomada de decisão em relação ao dinheiro e prosperidade.
           </h3>
