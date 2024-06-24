@@ -8,16 +8,23 @@ export function Testimonial() {
   const [active, setActive] = React.useState(2);
 
   return (
-    <section className="py-12 px-8 lg:py-24">
+    <section
+      className="py-12 px-8 lg:py-24"
+      style={{
+        backgroundImage: "url('/backgrounds/bg2.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
       <div className="container max-w-screen-lg mx-auto">
         <div className="py-8 lg:flex-row">
           <div className="w-full lg:gap-10 h-full lg:!flex justify-between ">
             <div className="w-full mb-10 lg:mb-0">
-              <h3
+              {/* <h3
                 className="mb-4 font-bold lg:max-w-xs text-blue-gray text-2xl"
               >
                 Palestras, cursos e muito mais
-              </h3>
+              </h3> */}
               <div className="flex items-center gap-4">
                 <Image
                   width={48}

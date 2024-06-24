@@ -6,10 +6,10 @@ import { Typography } from "@material-tailwind/react";
 const CLIENTS = [
   "beb.png",
   "99.png",
-  "brk123.png",
+  "brk.png",
   "johnson.png",
   "cengage.png",
-  "wipro-removebg-preview.png",
+  "wipro.png",
   "dsop.png",
   "paulo.png",
   "posture.png"
@@ -17,9 +17,9 @@ const CLIENTS = [
 
 export function Clients() {
   return (
-    <section className="px-8 py-28 bg-pink-200">
+    <section className="px-8 py-20 bg-teal-400">
       <div className="container mx-auto text-center">
-        <h2 className="mb-8 text-white font-bold text-3xl">
+        <h2 className="mb-8 text-gray-200 font-bold text-4xl">
           Know How
         </h2>
         <div className="flex flex-wrap items-center justify-center gap-6">

@@ -5,7 +5,14 @@ import { Input, Button, Typography } from "@material-tailwind/react";
 
 function Hero() {
   return (
-    <header className="bg-white p-8">
+    <header
+      className="bg-white p-8"
+      style={{
+        backgroundImage: "url('/backgrounds/bg2.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
       <div className="container mx-auto grid h-full gap-10 min-h-[60vh] w-full grid-cols-1 items-center lg:grid-cols-2">
         <div className="row-start-2 lg:row-auto">
           <h1
@@ -17,9 +24,11 @@ function Hero() {
           <h3
             className="mb-4 !text-gray-500 md:pr-16 xl:pr-28"
           >
-            Palestrante internacional, treinadora e mentora. É psicóloga, especializada em psicologia econômica e prosperidade, com duas certificações em Personal & Professional Coaching, Business Coaching e Empresária.
-            Atuou por anos com Educação Financeira e Terapia Financeira, e como as emoçôes e o nosso modelo mental
-            interferem em nossa tomada de decisão em relação ao dinheiro e prosperidade.
+            Palestrante Internacional <br/>
+            Mentora, Escritora, Treinadora <br/>
+            Psicóloga especialista em finanças comportamentais <br/>
+            Especialista em Prosperidade e Mentalidade <br/>
+            Há mais de 20 anos prosperando pessoas
           </h3>
           {/* <div className="grid">
             <Typography
@@ -48,7 +57,7 @@ function Hero() {
           height={1024}
           alt="team work"
           src="/image/foto-home.jpg"
-          className="h-[36rem] w-full rounded-xl object-cover"
+          className="h-[28rem] w-full rounded-xl object-cover"
         />
       </div>
     </header>

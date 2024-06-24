@@ -1,4 +1,5 @@
 import { Card, CardBody, Typography } from "@material-tailwind/react";
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 interface SkillCardProps {
   title: string;
@@ -19,6 +20,11 @@ export function SkillCard({ icon: Icon, title, children }: SkillCardProps) {
         <h6 className="px-8 font-normal !text-gray-500">
           {children}
         </h6>
+        <div className="flex justify-center mt-2 mb-4">
+          <a href="https://wa.me/+5511985511358" target="_blank" rel="noopener noreferrer">
+            <WhatsAppIcon className="h-14 w-14 bg-green-500 p-2 rounded-full" style={{ color: 'white', filter: 'drop-shadow(0 0 2px green)' }} />
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -65,8 +65,9 @@ export function Navbar() {
   }, []);
 
   return (
-    <div className="border-0 sticky top-0 z-50 w-full mt-6 h-20 bg-white">
-      <div className="container mx-auto flex items-center justify-between">
+    <div
+      className="border-0 sticky top-0 z-50 w-full h-20 bg-gray-200">
+      <div className="container mx-auto flex items-center justify-between ml-4 pt-2">
         {/* <Typography color="blue-gray" className="text-lg font-bold">
           
         </Typography> */}
@@ -74,7 +75,7 @@ export function Navbar() {
           width={70}
           height={70}
           alt="paulaschurt"
-          src="/logos/logo-paula.png"
+          src="/logos/logo-paula2.png"
         />
         {/* <ul className="ml-10 hidden items-center gap-8 lg:flex">
           {NAV_MENU.map(({ name, icon: Icon, href }) => (

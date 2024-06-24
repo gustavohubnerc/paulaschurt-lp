@@ -32,9 +32,11 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
       </head>
       <body className={roboto.className}>
-        <Layout>
-          {children}
-        </Layout>
+        <div className="min-h-screen bg-cover bg-center" style={{ backgroundImage: "url('/image/bg2.png')" }}>
+          <Layout>
+            {children}
+          </Layout>
+        </div>
       </body>
     </html>
   );
