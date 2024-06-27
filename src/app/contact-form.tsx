@@ -21,7 +21,7 @@ import Image from "next/image";
 export function ContactForm() {
   return (
     <section
-     className="px-6 py-16"
+     className="px-6 py-16 bg-gray-500 border-none"
      style={{
        backgroundImage: "url('/backgrounds/bg2.png')",
        backgroundSize: "cover",
@@ -34,7 +34,7 @@ export function ContactForm() {
         </h1>
       </div>
       <div>
-        <div className="container mx-auto border border-gray/50">
+        <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-7 md:gap-10">
             <div className="w-full col-span-3 rounded-lg h-full py-8 p-5 md:p-16 bg-teal-400">
               <h1 className="mb-4 font-bold text-3xl text-gray-200">

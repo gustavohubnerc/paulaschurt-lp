@@ -9,7 +9,7 @@ export function Testimonial() {
 
   return (
     <section
-      className="py-12 px-8 lg:py-24"
+      className="py-12 px-8 lg:py-24 bg-gray-500"
       style={{
         backgroundImage: "url('/backgrounds/bg2.png')",
         backgroundSize: "cover",

@@ -6,28 +6,28 @@ import { Input, Button, Typography } from "@material-tailwind/react";
 function Hero() {
   return (
     <header
-      className="bg-white p-8"
+      className="bg-white p-12"
       style={{
         backgroundImage: "url('/backgrounds/bg2.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      <div className="container mx-auto grid h-full gap-10 min-h-[60vh] w-full grid-cols-1 items-center lg:grid-cols-2">
-        <div className="row-start-2 lg:row-auto">
+      <div className="container mx-auto grid h-full min-h-[50vh] w-full grid-cols-1 items-center lg:grid-cols-2 mt-4">
+        <div className="row-start-2 lg:row-auto mt-6">
           <h1
             color="blue-gray"
-            className="mb-4 lg:text-5xl !leading-tight text-3xl"
+            className="mb-2 text-5xl text-teal-500 font-extrabold"
           >
             Paula Schurt
           </h1>
           <h3
-            className="mb-4 !text-gray-500 md:pr-16 xl:pr-28"
+            className="!text-gray-500 text-lg"
           >
-            Palestrante Internacional <br/>
+            {/* Palestrante Internacional <br/>
             Mentora, Escritora, Treinadora <br/>
             Psicóloga especialista em finanças comportamentais <br/>
-            Especialista em Prosperidade e Mentalidade <br/>
+            Especialista em Prosperidade e Mentalidade <br/> */}
             Há mais de 20 anos prosperando pessoas
           </h3>
           {/* <div className="grid">
@@ -54,10 +54,11 @@ function Hero() {
         </div>
         <Image
           width={1024}
-          height={1024}
+          height={824}
           alt="team work"
           src="/image/foto-home.jpg"
-          className="h-[28rem] w-full rounded-xl object-cover"
+          className="rounded-xl"
+          style={{ objectPosition: 'top' }}
         />
       </div>
     </header>

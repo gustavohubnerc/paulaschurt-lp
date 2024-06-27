@@ -48,14 +48,14 @@ const SKILLS = [
 export function Skills() {
   return (
     <section 
-      className="px-8 py-6"
+      className="px-8 py-6 bg-gray-500"
       style={{
         backgroundImage: "url('/backgrounds/bg2.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      <div className="container mx-auto mb-20 text-center">
+      <div className="container mx-auto mb-20 text-center bg-gray-50 p-4 rounded-xl">
         <h2 color="blue-gray" className="m-8 font-bold text-5xl">
           Sobre mim
         </h2>
@@ -76,7 +76,7 @@ export function Skills() {
         {SKILLS.map((props, idx) => (
           <SkillCard key={idx} {...props} />
         ))}
-        <h4 className="text-center text-xl font-bold mt-20 mb-10 text-teal-500">
+        <h4 className="text-center text-xl font-bold mt-8 text-teal-500 bg-white rounded-xl p-4">
           Conteúdo personalizado para sua empresa, sempre de acordo com a cultura, necessidade e momento de cada equipe!
         </h4>
       </div>
