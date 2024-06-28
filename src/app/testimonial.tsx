@@ -5,7 +5,14 @@ import Image from "next/image";
 import { Typography, Card, CardBody, Avatar } from "@material-tailwind/react";
 
 export function Testimonial() {
-  const [active, setActive] = React.useState(2);
+  const [active, setActive] = React.useState(1);
+  const images = [
+    { id: 1, src: "/image/palestra1.png", alt: "palestras" },
+    { id: 2, src: "/image/palestra2.png", alt: "palestras" },
+    { id: 3, src: "/image/palestra3.png", alt: "palestras" },
+    { id: 4, src: "/image/palestra4.png", alt: "palestras" },
+    { id: 5, src: "/image/palestra5.png", alt: "palestras" },
+  ];
 
   return (
     <section
@@ -20,34 +27,24 @@ export function Testimonial() {
         <div className="py-8 lg:flex-row">
           <div className="w-full lg:gap-10 h-full lg:!flex justify-between ">
             <div className="w-full mb-10 lg:mb-0">
-              {/* <h3
-                className="mb-4 font-bold lg:max-w-xs text-blue-gray text-2xl"
-              >
-                Palestras, cursos e muito mais
-              </h3> */}
               <div className="flex items-center gap-4">
-                <Image
-                  width={48}
-                  height={48}
-                  src="/image/avatar1.png"
-                  alt="palestras"
-                  className={`cursor-pointer ${
-                    active === 1 ? "opacity-100" : "opacity-50"
-                  } rounded-lg`}
-                  onClick={() => setActive(1)}
-                />
-                <div className="w-[1px] h-[36px] bg-blue-gray-100 "></div>
-                <Image
-                  width={48}
-                  height={48}
-                  src="/image/avatar2.png"
-                  alt="palestra"
-                  className={`cursor-pointer ${
-                    active === 2 ? "opacity-100" : "opacity-50"
-                  } rounded-lg`}
-                  onClick={() => setActive(2)}
-                />
-                <div className="w-[1px] h-[36px] bg-blue-gray-100" />
+                {images.map((image) => (
+                  <React.Fragment key={image.id}>
+                    <Image
+                      width={48}
+                      height={48}
+                      src={image.src}
+                      alt={image.alt}
+                      className={`cursor-pointer ${
+                        active !== image.id ? "opacity-50" : "opacity-100"
+                      } rounded-lg`}
+                      onClick={() => setActive(image.id)}
+                    />
+                    {image.id < images.length && (
+                      <div className="w-[1px] h-[36px] bg-blue-gray-100"></div>
+                    )}
+                  </React.Fragment>
+                ))}
               </div>
             </div>
             <div className="h-[21rem] rounded-lg w-full sm:w-[18rem] shrink-0">
@@ -55,7 +52,7 @@ export function Testimonial() {
                 width={768}
                 height={768}
                 alt="testimonial image"
-                src={`/image/avatar${active}.png`}
+                src={`/image/palestra${active}.png`}
                 className="h-full rounded-lg w-full object-cover"
               />
             </div>
