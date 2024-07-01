@@ -17,8 +17,20 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YoutubeIcon from '@mui/icons-material/YouTube';
 import EmailIcon from '@mui/icons-material/Email';
 import Image from "next/image";
+import { useState } from "react";
 
 export function ContactForm() {
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [company, setCompany] = useState('');
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const message = `Email: ${email}, Telefone: ${phone}, Empresa: ${company}`;
+    const encodedMessage = encodeURIComponent(message);
+    window.location.href = `https://wa.me/+5511985511358?text=${encodedMessage}`;
+  };
+
   return (
     <section
      className="px-6 py-16 bg-gray-500 border-none"
@@ -67,7 +79,7 @@ export function ContactForm() {
               <div className="flex mb-10 gap-5">
                 <EmailIcon className="h-6 w-6 text-gray-200" />
                 <h6 className="mb-4 text-gray-200 font=bold text-xl">
-                  paulaschurt@gmail.com
+                  contatopaulaschurt@gmail.com
                 </h6>
               </div>
             </div>
@@ -82,6 +94,66 @@ export function ContactForm() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="container mx-auto mt-10">
+        <form className="w-full max-w-lg mx-auto bg-white p-8 rounded-lg shadow" onSubmit={handleSubmit}>
+          {/* Email input */}
+          <div className="mb-6">
+            <label htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2">Email</label>
+            <Input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Digite seu email"
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              onChange={(e) => setEmail(e.target.value)}
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+              crossOrigin=""
+            />
+          </div>
+          {/* Phone input */}
+          <div className="mb-6">
+            <label htmlFor="phone" className="block text-gray-700 text-sm font-bold mb-2">Telefone</label>
+            <Input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Digite seu telefone"
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              onChange={(e) => setPhone(e.target.value)}
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+              crossOrigin=""
+            />
+          </div>
+          {/* Company input */}
+          <div className="mb-6">
+            <label htmlFor="company" className="block text-gray-700 text-sm font-bold mb-2">Empresa</label>
+            <Input
+              type="text"
+              id="company"
+              name="company" 
+              placeholder="Nome da sua empresa" 
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" onChange={(e) => setCompany(e.target.value)}
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+              crossOrigin=""
+            />
+          </div>
+          {/* Submit button */}
+          <div className="flex items-center justify-between">
+            <Button
+              type="submit"
+              className="bg-teal-400 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+            >
+              Enviar
+            </Button>
+          </div>
+        </form>
       </div>
     </section>
   );
